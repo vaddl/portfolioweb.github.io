@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSideBar()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="white" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href=""><img class="header-logo" src="images/profile_pic.png" alt=""> <p style="padding-left:15px;">Voloshyn</p></a></li>
+                <li class="hideOnMobile"><a  href="#about">About me</a></li>
+                <li class="hideOnMobile"><a  href="#education">Education</a></li>
+                <li class="hideOnMobile"><a  href="#skills">Skills</a></li>
+                <li class="hideOnMobile"><a  href="#contact">Contact</a></li>
+                <li class="menu-button hideOnDesktop" onclick=showSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="white" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main" >
+        <div>
+            <div class="text-container">
+                <p class="small-text">Welcome to my Portfolio</p>
+                <p class="greeting-text">Hi, I'm <span style="color:#ff7f50;">Vadym Voloshyn</span></p>
+                <div class="animated-text">
+                    <p style="color:whitesmoke; display: inline-block;">a</p> <span></span>
+                </div>
+                <p class="short-description">
+                    Hello There! I am a third year student at Kherson State University. My major is Sofaware Enginnering, have a look at my portfolio
+                </p>
+            </div>
+           
+        </div>
+        
+    </section>
+    <section class="about-me" id="#about">
+        <h2>About me</h2>
+        <div class="sections">
+           <div style="border-radius: 50%; overflow: hidden;"><img class="main-pic" src="images/main picture.jpg" alt=""></div> 
+            <div class="description">
+                <p style="">
+                    &ensp;&ensp; Hello once more! I'm Vadim, a 19-year-old information technology enthusiast diving into the exciting realm of indie game development. Starting with Python, C++, and C#, my initial foray into programming laid the groundwork for my ongoing self-study in game development. Passionate about crafting immersive gaming experiences, I'm dedicated to honing my skills and staying abreast of industry trends. I find joy in the fusion of creativity and technology, using code to bring virtual worlds to life.
+                </p>
+                <p style="padding-top: 15px;">
+                    &ensp;&ensp; My journey involves continuous learning and pushing creative boundaries. With a focus on self-directed education, I'm exploring the dynamic landscape of game development. From coding to design, I'm on a quest to contribute to the innovative community that defines this field.
+                </p>
+                   
+            </div>
+        
+    </section>
+    <section class="education" id="education">
+        <h2 class="edu">About My Education</h2>
+        <div class="timeline">
+  
+            <h2 class="timeline__item timeline__item--year">2010</h2>
+            
+            <div class="timeline__item">
+              <h3 class="timeline__title">Kherson secondary school
+                I-III degrees No. 55</h3>
+                <img style="height: 100px;" src="images/school.png" alt="">
+            </div>
+            
+            <h2 class="timeline__item timeline__item--year">2018</h2>
+            
+            <div class="timeline__item">
+              <h3 class="timeline__title">Khersonsʹkyy Litsey Khersonsʹkoyi Oblasnoyi Rady</h3>
+              <img style="height: 100px;" src="images/litsey.png" alt="">
+            </div>
+            
+            <h2 class="timeline__item timeline__item--year">2021</h2>
+            <div class="timeline__item">
+                <h3 class="timeline__title">Kherson State University</h3>
+                <img style="height: 100px;" src="images/univercity.png" alt="">
+               
+              </div>
+          </div>
+          <h2 class="timeline__item timeline__item--year">2025</h2>
+    </section>
+    <section class="skills" id="skills">
+        <h2 class="edu">About My Skills</h2>
+        <div class="skills-bar">
+            <div class="bar">
+                <div class="info">
+                    <span>C++</span>
+        </div>
+        <div class="progress-line html"><span></span></div>
+            </div>
+        
+        
+        <div class="bar">
+                <div class="info">
+                    <span>JAVASCRIPT</span>
+        </div>
+        <div class="progress-line javascript"><span></span></div>
+            </div>
+        
+        
+        <div class="bar">
+                <div class="info">
+                    <span>C#</span>
+        </div>
+        <div class="progress-line php"><span></span></div>
+            </div>
+        
+        
+        <div class="bar">
+                <div class="info">
+                    <span>PYTHON</span>
+        </div>
+        <div class="progress-line python"><span></span></div>
+            </div>
+        
+        
+        <div class="bar">
+                <div class="info">
+                    <span>HTML/CSS</span>
+        </div>
+        <div class="progress-line mysql"><span></span></div>
+            </div>
+              
+            </div>
+    </section>
+    <footer class="footer" id="contact">
+       
+        <a href="mailto:vadymvoloshyn16@gmail.com"><img class="footer-img" src="images/icons8-gmail-logo-94.png" alt=""></a>
+        <a href="https://instagram.com"><img class="footer-img" src="images/icons8-instagram-120.png" alt=""></a>
+        <a href="tel:+38091231021"><img class="footer-img" src="images/icons8-phone-94.png" alt=""></a>
+        <a href="@vddll"><img class="footer-img" src="images/icons8-telegram-120.png" alt=""></a>
+    </footer>
+    <script>
+        function showSideBar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display ="flex"
+        }
+        function hideSideBar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display ="none"
+        }
+    </script>
+</body>
+</html>
